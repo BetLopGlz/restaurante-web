@@ -1,0 +1,45 @@
+import React from 'react';
+import '../../../App.css';
+
+const Formulario = () =>   {
+
+    const styleB={
+      backgroundColor:'#ea8118',
+		borderColor:'#ea8118'
+    }
+
+    return (
+
+        <form className="mb-5">
+
+          <div className="form-group">
+            <label htmlFor="nya" className="negrita">Nombres y Apellidos</label>
+            <input type="text" className="form-control" id="nya" required />            
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="email" className="negrita">Email</label>
+            <input type="email" className="form-control" id="email" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="asunto" className="negrita">Asunto</label>
+            <input type="text" className="form-control" id="asunto" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="mensaje" className="negrita">Mensaje</label>
+            <textarea className="form-control" id="mensaje" required></textarea>
+          </div>
+
+          <button type="submit" style={styleB} className="btn btn-dark">Enviar</button>
+
+        </form>
+
+    )
+    
+  }
+
+
+
+export default Formulario;
