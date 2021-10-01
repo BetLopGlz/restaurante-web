@@ -1,12 +1,7 @@
-import React, {Fragment, useState} from 'react';
+import React, { useState} from 'react';
 import Header from '../Header/Header';
 import Footer from '../footer/Footer';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
+import FormularioReservaciones from './FormularioReservaciones'
 
 
 const Reservaciones = () => {
@@ -41,9 +36,6 @@ const Reservaciones = () => {
 		<>
 
 			<Header />
-
-			
-
 				<section className="text-center">
 					<div className="container">
 						<h1 className="jumbotron-heading" style={styleTitle}>Reservaciones </h1>
@@ -52,8 +44,12 @@ const Reservaciones = () => {
 						</p>
 					</div>
 				</section>
-				
-				
+				<div className="container">
+				<div className="col-md-6">
+		        
+				<FormularioReservaciones/>
+				</div>
+			</div>
 			
 			<Footer />
 
