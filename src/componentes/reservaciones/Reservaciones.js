@@ -1,7 +1,11 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import Footer from '../footer/Footer';
 import FormularioReservaciones from './FormularioReservaciones'
+import ConsultaCitas from './ConsultaCitas'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
 
 const Reservaciones = () => {
@@ -13,44 +17,50 @@ const Reservaciones = () => {
 	}
 
 	const [datos, setDatos] = useState({
-        nombre: '',
-        apellido: ''
-    })
+		nombre: '',
+		apellido: ''
+	})
 
-    const handleInputChange = (event) => {
-        // console.log(event.target.name)
-        // console.log(event.target.value)
-        setDatos({
-            ...datos,
-            [event.target.name] : event.target.value
-        })
-    }
+	const handleInputChange = (event) => {
+		// console.log(event.target.name)
+		// console.log(event.target.value)
+		setDatos({
+			...datos,
+			[event.target.name]: event.target.value
+		})
+	}
 
-    const enviarDatos = (event) => {
-        event.preventDefault()
-        console.log('enviando datos...' + datos.nombre + ' ' + datos.apellido)
-    }
+	const enviarDatos = (event) => {
+		event.preventDefault()
+		console.log('enviando datos...' + datos.nombre + ' ' + datos.apellido)
+	}
 
 	return (
 
 		<>
 
 			<Header />
+			<main role="main" className="flex-shrink-0 mt-5">
 				<section className="text-center">
-					<div className="container">
-						<h1 className="jumbotron-heading" style={styleTitle}>Reservaciones </h1>
-						<p className="lead text-muted">
-							Aqui puedes realizar una reservacion!!
-						</p>
-					</div>
+				    <div className="container">
+				      <h1 className="jumbotron-heading" style={styleTitle}>Reservaciones </h1>
+				      <p className="lead text-muted">
+				      	Registro y Consulta de Reservaciones
+				      </p>				      
+				    </div>
 				</section>
-				<div className="container">
-				<div className="col-md-6">
-		        
-				<FormularioReservaciones/>
-				</div>
-			</div>
-			
+				<Container>
+				<Row >
+					<Col md={4}>
+						<FormularioReservaciones />
+					</Col>
+					<Col xs={0}/>
+					<Col xs={8} md={7}>
+						<ConsultaCitas />
+					</Col>
+				</Row>
+				</Container>
+				</main>
 			<Footer />
 
 		</>

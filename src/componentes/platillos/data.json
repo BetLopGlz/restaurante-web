@@ -6,87 +6,94 @@
         "price": "70"
       },
       {
-        "name": "Surf & Turf",
-        "description": "A grilled, queen-cut ribeye served with shrimp and scallop alfredo.",
-        "price": "17"
+        "name": "Huevos rancheros ",
+        "description": "Dos ingredientes a elegir. Acompañado de frijoles refritos.",
+        "price": "75"
       },
       {
-        "name": "Creamy Sage",
-        "description": "Chicken breast sautéed with fresh sage and prosciutto. Served atop creamy asiago linguini.",
-        "price": "21"
+        "name": "Omelette",
+        "description": "Dos ingredientes a elegir. Acompañado de frijoles refritos.",
+        "price": "80"
       },
       {
-        "name": "From the Sea",
-        "description": "Fresh haddock, gulf shrimp, and sea scallops dipped in beer batter and fried to a golden brown.",
-        "price": "23"
+        "name": "Sandwich de pavo",
+        "description": "Con lechuga, jitomate, pepino, acompañado con papas fritas estilo caseras. Pan de 12 granos",
+        "price": "80"
       },
       {
-        "name": "BB's Tenderloin",
-        "description": "Tenderloin tips, sautéed with bacon and mushrooms and finished with a bourbon-BBQ sauce.",
-        "price": "18"
+        "name": "Molletes",
+        "description": "Nuestros molletes especiales con tocino de cerdo acompañados con pico de gallo de la casa. Dos unidades",
+        "price": "77"
       },
       {
-        "name": "Chicken Marsala",
-        "description": "Boneless chicken breast sautéed with mushrooms and finished in a marsala and cream reduction.",
-        "price": "22"
+        "name": "Pan Francés",
+        "description": "De 5 a 6 rebanadas de pan tipo telera previamente mojadas en una mezcla de leche, huevo y azúcar, sobre una cama de mermelada de zarzamora",
+        "price": "65"
       }
     ],
-    "sides": [
+    "entradas": [
       {
-        "name": "Fries",
-        "price": "5"
+        "name": "Ensalada Cesar",
+        "price": "75"
       },
       {
-        "name": "Onion Rings",
-        "price": "4"
+        "name": "Papas Fritas",
+        "price": "45"
       },
       {
-        "name": "Has Brown",
-        "price": "3"
+        "name": "Papa Hash Brown",
+        "price": "35"
       },
       {
-        "name": "Chicken Nuggets",
-        "price": "4"
+        "name": "Nuggets de Pollo",
+        "price": "55"
       },
       {
-        "name": "Salad",
-        "price": "6"
+        "name": "Boneless",
+        "price": "60"
       },
       {
-        "name": "Coleslaw",
-        "price": "5"
+        "name": "Alitas",
+        "price": "85"
       }
+      
     ],
-    "drinks": [
+    "bebidas": [
       {
-        "name": "Soft Drink",
-        "price": "4",
-        "category": "drink"
+        "name": "Café Americano",
+        "price": "35",
+        "category": "bebida"
       },
       {
-        "name": "Orange Juice",
-        "price": "5",
-        "category": "drink"
+        "name": "Cappuchino",
+        "price": "40",
+        "category": "bebida"
       },
       {
-        "name": "Iced Tea",
-        "price": "4",
-        "category": "drink"
+        "name": "Tisana Herbal",
+        "price": "45",
+        "category": "bebida"
       },
       {
-        "name": "Coffee",
-        "price": "6",
-        "category": "drink"
+        "name": "Tisana Frutal",
+        "price": "47",
+        "category": "bebida"
+      },
+      {
+        "name": "Naranjada",
+        "price": "36",
+        "category": "bebida"
       },
       {
         "name": "Smoothie",
-        "price": "4",
-        "category": "drink"
+        "price": "65",
+        "category": "bebida"
       },
       {
-        "name": "Water",
-        "price": "2",
-        "category": "drink"
+        "name": "Malteada",
+        "price": "55",
+        "category": "bebida"
       }
+
     ]
   }

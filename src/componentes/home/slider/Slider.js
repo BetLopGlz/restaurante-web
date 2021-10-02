@@ -1,47 +1,54 @@
 import React from 'react';
-
+import {Carousel} from 'react-bootstrap'
 const Slider = () =>  {
 	const styleA={
         backgroundColor: '#ea8118',
         borderColor: '#ea8118'
       }
+	  const imgStyle= {
+		width: 'auto',
+		height: '500px',
+		maxHeight: '500px'
+	  }
   	return (
 
-  		<div id="slider" className="carousel slide" data-ride="carousel" >
-		    <ol className="carousel-indicators" >
-		        <li data-target="#slider" data-slide-to="0" className="active"></li>
-		        <li data-target="#slider" data-slide-to="1"></li>
-		        <li data-target="#slider" data-slide-to="2"></li>
-		    </ol>
-		    <div className="carousel-inner">
-		        <div className="carousel-item active">
-		            <img className="img-fluid" src="https://cdn.pixabay.com/photo/2021/01/19/08/47/sandwich-5930496_960_720.jpg" />
-		            <div className="elementos">
-		                <a className="btn btn-lg btn-dark" href="#" style={styleA}  role="button">Leer más</a>
-		            </div>
-		        </div>
-		        <div className="carousel-item">
-		            <img className="img-fluid" src="https://media.istockphoto.com/photos/vegetable-paneer-sandwich-using-cottage-cheese-with-tomato-onion-and-picture-id1300443216?s=612x612" />
-		            <div className="elementos">
-		                <a className="btn btn-lg btn-dark" href="#" style={styleA} role="button">Leer más</a>
-		            </div>
-		        </div>
-		        <div className="carousel-item">
-		            <img className="img-fluid" src="https://cdn.pixabay.com/photo/2016/11/06/23/16/breakfast-1804436_960_720.jpg" />
-		            <div className="elementos">
-		                <a className="btn btn-lg btn-dark" href="#" style={styleA} role="button">Leer más</a>
-		            </div>
-		        </div>
-		    </div>
-		    <a className="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-		        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-		        <span className="sr-only">Previous</span>
-		    </a>
-		    <a className="carousel-control-next" href="#slider" role="button" data-slide="next">
-		        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-		        <span className="sr-only">Next</span>
-		    </a>
-		</div>
+		<Carousel>
+		<Carousel.Item>
+		  <img style={imgStyle}
+			className="d-block w-100"
+			src="https://cdn.pixabay.com/photo/2020/02/13/23/57/mexican-food-4847184_960_720.jpg"
+			
+		  />
+		  <Carousel.Caption>
+		  <h3>PROMO SEMANAL 1</h3>
+			<p>Prueba nuestras enchiladas</p>
+		  </Carousel.Caption>
+		</Carousel.Item>
+		<Carousel.Item>
+		  <img style={imgStyle}
+			className="d-block w-100"
+			src="https://cdn.pixabay.com/photo/2018/07/14/21/30/club-sandwich-3538455_960_720.jpg"
+			
+		  />
+	  
+		  <Carousel.Caption>
+		  <h3>PROMO SEMANAL 2</h3>
+			<p>Esta semana promociones en todos los Sandwich</p>
+		  </Carousel.Caption>
+		</Carousel.Item>
+		<Carousel.Item>
+		  <img style={imgStyle}
+			className="d-block w-100"
+			src="https://cdn.pixabay.com/photo/2017/03/27/12/03/breakfast-2178268_960_720.jpg/400x400?text=Promocion3"
+			alt="Third slide"
+		  />
+	  
+		  <Carousel.Caption>
+			<h3>PROMO SEMANAL 3</h3>
+			<p>Descuento en la compra de un capuchino</p>
+		  </Carousel.Caption>
+		</Carousel.Item>
+	  </Carousel>
 
   	)
     

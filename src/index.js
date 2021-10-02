@@ -13,7 +13,7 @@ import Nosotros from './componentes/nosotros/Nosotros';
 import Platillos from './componentes/platillos/Platillos';
 import Contacto from './componentes/contacto/Contacto';
 import Reservaciones from './componentes/reservaciones/Reservaciones';
-
+import Blog from  './componentes/blog/Blog'
 
 // Configuración de la rutas del Sitio Web 
 ReactDOM.render(
@@ -26,7 +26,8 @@ ReactDOM.render(
 		        <Route path='/nosotros' component={Nosotros} />
 		        <Route path='/platillos' component={Platillos} /> 
 		        <Route path='/contacto' component={Contacto} /> 
-				<Route path='/reservaciones' component={Reservaciones} />  
+				<Route path='/reservaciones' component={Reservaciones} />
+				<Route path='/blog' component={Blog} />  
 
 	      	</Switch>
 	    </div>

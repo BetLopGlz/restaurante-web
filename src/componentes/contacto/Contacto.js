@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Formulario from './formulario/Formulario';
 import Mapa from './mapa/Mapa';
 import Footer from '../footer/Footer';
+import ContactoCard from './contactoCard/ContactoCard';
 
 
 const Contacto = () =>    {
@@ -41,6 +42,8 @@ const Contacto = () =>    {
 
 					</div>
 				</div>	
+
+				<ContactoCard/>
 
 	  		</main>
 

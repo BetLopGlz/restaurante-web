@@ -1,6 +1,6 @@
 import React, {Fragment,useState}  from 'react';
 import '../../App.css';
-
+import firebase from '../../firebase';
 
 
 
@@ -19,7 +19,7 @@ const FormularioReservaciones = () =>    {
    noPersonas: '',
    indicaciones: '',
 });
-const [ error, actualizarError ] = useState(false)
+const [ error, actualizarError ] = useState(false);
 
 // Función que se ejecuta cada que el usuario escribe en un input
 const actualizarState = e => {
@@ -31,7 +31,8 @@ const actualizarState = e => {
 
 // Extraer los valores
 const { nombre,email,telefono,fecha,hora,noPersonas,indicaciones } = cita;
-const submitCita = e => {
+
+const submitCita = async(e) => {
   e.preventDefault();
  
 // Validar
@@ -40,21 +41,38 @@ if(nombre.trim() === '' || email.trim() === ''  || telefono.trim() === ''  || fe
   return;
 }
 
+try{
+  const db = firebase.firestore();
+  const data = await db.collection('citas').add({
+    nombre,
+    email,
+    telefono,
+    fecha,
+    hora,
+    noPersonas,
+    indicaciones
+  });
+  console.log(data);
+}catch(error){
+  console.log(error);
+}
 // Eliminar el mensaje previo 
 actualizarError(false);
   console.log(cita)
 
-  // Reiniciar el form
-  actualizarCita({
-    nombre: '',
-    email: '',
-    telefono: '',
-    fecha: '',
-   hora: '',
-   noPersonas: '',
-   indicaciones: '',
+// Reiniciar el form
+actualizarCita({
+  nombre: '',
+  email: '',
+  telefono: '',
+  fecha: '',
+ hora: '',
+ noPersonas: '',
+ indicaciones: '',
 })
 }
+
+
 
   return (
     <Fragment>

@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import logo from "../Header/logo.jpg"
 
 
+
 const Menu = () =>  {
 	const styleButton={
 		backgroundColor:'#ea8118',
@@ -34,6 +35,9 @@ const Menu = () =>  {
 			        </li>
 			        <li className="nav-item">
 			          	<NavLink to="/contacto" className="nav-link">Contacto </NavLink>
+			        </li>
+					<li className="nav-item">
+			          	<NavLink to="/blog" className="nav-link">Blog </NavLink>
 			        </li>
 
 			    </ul>
